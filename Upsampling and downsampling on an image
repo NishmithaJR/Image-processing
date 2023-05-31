@@ -1,0 +1,17 @@
+#upsampling
+import cv2
+image = cv2.imread('C:/Users/User/Downloads/Supra images/Supra5.png')
+print("Size of image before pyrUp: ", image.shape)
+image = cv2.pyrUp(image)
+print("Size of image after pyrUp: ", image.shape)
+cv2.imshow('UpSample', image)
+
+
+
+#Downsampling
+import cv2
+image = cv2.imread('C:/Users/User/Downloads/Supra images/Supra5.png')
+print("Size of image before pyrDown: ", image.shape)
+image = cv2.pyrDown(image)
+print("Size of image after pyrDown: ", image.shape)
+cv2.imshow('DownSample', image)
