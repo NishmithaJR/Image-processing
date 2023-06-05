@@ -1,0 +1,43 @@
+#using the imagefiltering
+from PIL import Image, ImageFilter
+image = Image.open('C:/Users/User/Downloads/Supra images/Supra6.png')
+embossimage = image.filter(ImageFilter.EMBOSS)
+embossimage.show()
+
+
+
+# Importing Image and ImageFilter module from PIL package
+from PIL import Image, ImageFilter
+ # creating a image object
+im1 = Image.open("C:/Users/User/Downloads/Supra images/Supra6.png")
+ # applying the EDGE_ENHANCE filter
+im2 = im1.filter(ImageFilter.EDGE_ENHANCE)
+im2.show()
+
+
+
+# Importing Image and ImageFilter module from PIL package
+from PIL import Image, ImageFilter
+ # creating a image object
+im1 = Image.open("C:/Users/User/Downloads/Supra images/Supra6.png")
+ # applying the contour filter
+im2 = im1.filter(ImageFilter.CONTOUR)
+im2.show()
+
+
+
+# Importing Image and ImageFilter module from PIL package
+from PIL import Image, ImageFilter
+ # creating a image object
+im1 = Image.open("C:/Users/User/Downloads/Supra images/Supra6.png")
+ # applying the SHARPEN filter
+im2 = im1.filter(ImageFilter.SHARPEN)
+im2.show()
+
+
+
+#using the imagefiltering
+from PIL import Image, ImageFilter
+image = Image.open('C:/Users/User/Downloads/Supra images/Supra6.png')
+edges_image = image.filter(ImageFilter.FIND_EDGES)
+edges_image.show()
