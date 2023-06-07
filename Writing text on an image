@@ -1,0 +1,17 @@
+# importing cv2 library
+import cv2
+# Reading the image
+image = cv2.imread("C:/Users/User/Downloads/MY IMAGES/Bluetshirt.png")
+# Using cv2.putText()
+new_image = cv2.putText(
+  img = image,
+  text = "NIKE",
+  org = (157, 200),
+  fontFace = cv2.FONT_HERSHEY_DUPLEX,
+  fontScale = 3.0,
+  color = (255, 255, 255,),
+  thickness = 3
+)
+ # Saving the new image
+cv2.imshow("output image",new_image)
+cv2.waitKey(0)
