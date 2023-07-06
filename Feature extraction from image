@@ -1,0 +1,33 @@
+#Importing the required libraries 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage.io import imread, imshow
+
+#Loading the image
+image1 = imread('C:/Users/User/Downloads/Panda.png')
+imshow(image1);
+
+
+image2 = imread('C:/Users/User/Downloads/Panda.png', as_gray=True) 
+imshow(image2);
+
+
+#Shape of images
+print(image1.shape) 
+print(image2.shape)
+
+
+#size of the images 
+print(image1.size) 
+print(image2.size)
+
+
+#Pixel Features
+pixel_features1 = np.reshape(image2, (177*284)) 
+pixel_features1.shape,pixel_features1
+
+
+#pixel feature for the colored image
+pixel_features2 = np.reshape(image1, (177*284*3))
+pixel_features2.shape, pixel_features2
