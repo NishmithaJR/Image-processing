@@ -1,0 +1,11 @@
+#Algorithm:
+#Step 1: Import the Image and ImageStat libraries.
+#Step 2: Open the image.
+#Step 3: Pass the image to the stat function of the imagestat class.
+#Step 4: Print the variance of the pixels.
+
+
+from PIL import Image, ImageStat
+im=Image.open('C:/Users/User/Downloads/Panda.png') 
+stat=ImageStat.Stat(im)
+print(stat.var)
